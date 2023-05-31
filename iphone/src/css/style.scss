@@ -1,0 +1,247 @@
+$white-color: #F5F5F7;
+$blue-color: #2997FF;
+$gray-color: rgba(255, 255, 255, 0.8);
+$last-information-color: #424245;
+$last-information-black-color: #1D1D1F;
+
+@font-face {
+    font-weight: 400; /* Соответствует значению normal */
+    font-family: 'Helvetica Neue';
+    src: url("../fonts/Helvetica\ Neue\ Regular.otf");
+  }
+  
+  @font-face {
+    font-weight: 700; /* Соответствует значению bold */
+    font-family: 'Helvetica Neue';
+    src: url("../fonts/Helvetica\ Neue\ Condensed\ Bold.ttf");
+  }
+  
+  @font-face {
+    font-weight: 300;
+    font-family: 'Helvetica Neue';
+    src: url("../fonts/Helvetica\ Neue\ 67\ Medium\ Condensed.otf");
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 998px;
+    margin: 0 auto;
+}
+
+.nav {
+    background: rgba(22, 22, 23, 0.8);
+    height: 44px;
+    cursor: pointer;
+    &__logo {
+    }
+    &__list {
+        list-style-type: none;
+        display: flex;
+        padding: 13px;
+        gap: 23px;
+            color: $gray-color;
+            font-weight: 200;
+            font-size: 15px;
+    }
+    &__icons {
+        margin-left: 10px;
+        gap: 40px;
+        display: flex;
+    }
+}
+
+.ad {
+    height: 44.58px;
+    &__text {
+        margin: 11px;
+        font-family: 'Helvetica Neue';
+        font-weight: 400;
+        font-size: 14px;
+        // line-height: 21px;
+        text-align: center;
+        color: $last-information-black-color;
+    }
+    &__link {
+        color: $blue-color;
+        text-decoration: none;
+    }
+}
+
+.iphone14pro {
+    margin: -10px;
+    background: url('/src/img/header_background.jpg') center (center/cover) no-repeat;
+    height: 736px;
+    &__name {
+        padding-top: 55px;
+        font-family: 'Abhaya Libre Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 51px;
+        line-height: 60px;
+        color: $white-color;
+        text-align: center;
+    }
+    &__subtext {
+        margin-top: 20px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        color: $white-color;
+        text-align: center;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    &__learnMore {
+        color: $blue-color;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 15px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 29px;
+        text-decoration: none;
+    }
+    &__Buy {
+        color: $blue-color;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 15px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 29px;
+        text-decoration: none;
+    }
+}
+
+.iphone14 {
+    background: url('../img/2screen_background.jpg') center (center/cover) no-repeat;
+    height: 736px;
+    &__name {
+        margin-top: 70px;
+        text-align: center;
+        font-family: 'Abhaya Libre Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 60px;
+        color: $last-information-black-color;
+    }
+    &__subtext {
+        margin-top: 16px;
+        text-align: center;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 31px;
+        color: $last-information-black-color;
+    }
+}
+
+.watch {
+    background: url('/src/img/watch_background.jpg') center (center/cover) no-repeat;
+    height: 736px;
+    &__img {
+        display: flex;
+        padding-top: 53px;
+        // justify-content: center;
+    }
+    &__subtext {
+        display: block;
+        margin-top: 15px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 31px;
+        text-align: center;
+        color: $white-color;
+    }
+}
+
+.device {
+      display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__ipad {
+        max-width: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    &__name {
+        padding-top: 30px;
+        text-align: center;
+        font-family: 'Abhaya Libre Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 44px;
+        color: $last-information-black-color;
+    }
+    &__subtext {
+        margin-top: 4px;
+        text-align: center;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        color: $last-information-black-color;
+    }
+
+}
+
+.devices {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.macbook {
+    position: relative;
+    background: url('../img/macbook.jpg') center (center/cover) no-repeat;
+    width: 60vh;
+    height: 64vh;
+}
+
+.ipad {
+    position: relative;
+    margin-right: 12px;
+    margin-bottom: 14px;
+    width: 60vh;
+    height: 64vh;
+    background: url('../img/ipad.jpg') center (center/cover) no-repeat;
+}
+
+.homepod {
+    margin-right: 12px;
+    width: 60vh;
+    height: 60vh;
+    background: url('../img/homepod.jpg') center (center/cover) no-repeat;
+}
+
+.airpods {
+    width: 60vh;
+    height: 60vh;
+    background: url('../img/airpods.png') center (center/cover) no-repeat;
+}
+
