@@ -73,7 +73,7 @@ $last-information-black-color: #1D1D1F;
 
 .iphone14pro {
     margin: -10px;
-    background: url('/src/img/header_background.jpg') center (center/cover) no-repeat;
+    background: url('../img/header_background.jpg') center center/cover no-repeat;
     height: 736px;
     &__name {
         padding-top: 55px;
@@ -157,12 +157,12 @@ $last-information-black-color: #1D1D1F;
 }
 
 .watch {
-    background: url('/src/img/watch_background.jpg') center (center/cover) no-repeat;
+    background: url('../img/watch_background.jpg') center center/cover no-repeat;
     height: 736px;
     &__img {
         display: flex;
         padding-top: 53px;
-        // justify-content: center;
+        justify-content: center;
     }
     &__subtext {
         display: block;

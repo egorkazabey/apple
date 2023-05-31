@@ -62,7 +62,7 @@
 
 .iphone14pro {
   margin: -10px;
-  background: url("/src/img/header_background.jpg") center center/cover no-repeat;
+  background: url("../img/header_background.jpg") center center/cover no-repeat;
   height: 736px;
 }
 .iphone14pro__name {
@@ -146,12 +146,13 @@
 }
 
 .watch {
-  background: url("/src/img/watch_background.jpg") center center/cover no-repeat;
+  background: url("../img/watch_background.jpg") center center/cover no-repeat;
   height: 736px;
 }
 .watch__img {
   display: flex;
   padding-top: 53px;
+  justify-content: center;
 }
 .watch__subtext {
   display: block;
